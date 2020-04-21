@@ -38,7 +38,7 @@ export default class App extends Vue {
     const { form, rules, formJson, submit } = this;
 
     return <div>
-      <a-form-model ref='ruleForm' v-model={form} rules={rules}>
+      <a-form-model ref='ruleForm' model={form} rules={rules}>
         <a-form-model-item label='姓名' prop='user'>
           <a-input v-model={form.user} />
         </a-form-model-item>
